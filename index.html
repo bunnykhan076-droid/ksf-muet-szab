@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kashmore Students Federation – MUET SZAB Campus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" id="logoPlaceholder">KSF</div>
+      <div class="title">Kashmore Students Federation – MUET SZAB Campus</div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#batches">Batches</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Uniting Kashmore Students at MUET SZAB</h1>
+        <p class="lead">A community-driven federation where every student is a leader — collaborate, learn, and grow together.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#batches">Explore Batches</a>
+          <a class="btn outline" href="#achievements">Our Achievements</a>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <strong>Founded</strong>
+            <div class="muted">2016 — Rashid Ali Bajkani (F16 Civil)</div>
+          </div>
+          <div class="card">
+            <strong>Vision</strong>
+            <div class="muted">To unite the students of Kashmore District under one supportive platform.</div>
+          </div>
+          <div class="card">
+            <strong>Values</strong>
+            <div class="muted">Unity • Leadership • Collaboration</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="founder-card card">
+          <div class="founder-title">Founder</div>
+          <div class="founder">
+            <div class="avatar">R</div>
+            <div class="founder-info">
+              <div class="founder-name">Rashid Ali Bajkani</div>
+              <div class="muted">F16 — Civil Department</div>
+            </div>
+          </div>
+          <div class="muted small">Non-hierarchical federation — every student is a leader.</div>
+        </div>
+
+        <div class="card upcoming">
+          <strong>Upcoming</strong>
+          <div class="muted">Green Mehran Mission — annual plantation drives</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="section card">
+      <h2>About KSF</h2>
+      <p class="muted">Kashmore Students Federation (KSF) at MUET SZAB Campus was formally established in 2016 by Rashid Ali Bajkani and his peers. KSF welcomes new students every year and holds farewell events for graduating batches. KSF follows a collective leadership model where every student contributes according to their skills; senior batches help guide decisions after consulting juniors.</p>
+
+      <h3>Vision &amp; Mission</h3>
+      <p class="muted">To unite the students of <strong>Kashmore District</strong> under one banner of <strong>brotherhood, equality, and leadership</strong> at <strong>MUET SZAB Campus</strong>. We empower every student to contribute through their skills, ideas, and teamwork to build a respectful and progressive student community.</p>
+    </section>
+
+    <section id="batches" class="section">
+      <h2>Batches (2019 — 2024)</h2>
+      <div class="card tabs-card">
+        <div class="tabs" id="tabs">
+          <button class="tab active" data-year="2019">2019</button>
+          <button class="tab" data-year="2020">2020</button>
+          <button class="tab" data-year="2021">2021</button>
+          <button class="tab" data-year="2022">2022</button>
+          <button class="tab" data-year="2023">2023</button>
+          <button class="tab" data-year="2024">2024</button>
+        </div>
+
+        <div class="batch-panel card" id="panel"></div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section card">
+      <h2>Achievements & Activities</h2>
+      <div class="ach-grid">
+        <div>
+          <h3>Leadership & Events</h3>
+          <p class="muted">Under the coordination of <strong>Umar Bhayo</strong>, <strong>Mansoor Bhayo</strong>, and <strong>Samad Bajkani</strong>, KSF organized many events and led the Electrical team to notable finishes in campus activities.</p>
+        </div>
+        <div>
+          <h3>Innovation</h3>
+          <p class="muted"><strong>Bilal Bajkani</strong> won the Startup Ideas competition at the campus-level <em>Hult Prize</em> event.</p>
+        </div>
+        <div>
+          <h3>Sports</h3>
+          <p class="muted"><strong>Umar Bhayo</strong> represented MUET SZAB in the Table Tennis Tournament at Shah Abdul Latif University.</p>
+        </div>
+        <div>
+          <h3>Green Mehran Mission</h3>
+          <p class="muted">Plantation drives were held on <strong>8 August 2024</strong> in front of Hostel-1 and <strong>7 August 2025</strong> in front of Hostel-2. This mission continues annually.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section card">
+      <h2>Events & Gallery</h2>
+      <p class="muted">Upload photos later; they will appear here in the gallery.</p>
+      <div class="gallery">
+        <div class="g-item">Hostel-1 Plantation</div>
+        <div class="g-item">Hostel-2 Plantation</div>
+        <div class="g-item">Hult Prize Winner</div>
+      </div>
+    </section>
+
+    <section id="contact" class="section card">
+      <h2>Contact & Join Us</h2>
+      <p class="muted">To join KSF or contribute, send a message below. (Form is static in this package — integrate with a backend or email service to receive messages.)</p>
+      <form id="contactForm">
+        <div class="form-row">
+          <input id="name" placeholder="Full name" required />
+          <input id="dept" placeholder="Department / Batch" />
+        </div>
+        <textarea id="message" placeholder="Your message" rows="4"></textarea>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> Kashmore Students Federation – MUET SZAB Campus. Built with community spirit.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
